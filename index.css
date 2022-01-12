@@ -19,10 +19,7 @@ nav ul {
     padding: 0;
     overflow: hidden;
     background-color: black;
-    /* por dropdown na opçao maquinas para por o tipo de maquina */
-    /* por dropdown na opçao piercings para por o tipo de piercing */
-    
-
+    text-align: center;
 }
 
 li {
@@ -39,7 +36,7 @@ li a, .dropbtn {
   }
   
   li a:hover, .dropdown:hover .dropbtn {
-    background-color: black;
+    background-color: silver; /* mudar a cor */
   }
 
 li.dropdown {
@@ -63,7 +60,7 @@ li.dropdown {
     text-align: left;
   }
   
-  .dropdown-content a:hover {background-color: black;}
+  .dropdown-content a:hover {background-color: silver;}/*mudar a cor */
   
   .dropdown:hover .dropdown-content {
     display: block;
