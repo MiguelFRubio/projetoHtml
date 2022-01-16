@@ -12,36 +12,31 @@
         TattooPalace
     </header>
     
-    <nav>
-        <ul>
-           <li><a href="index.html">Inicio</a></li>
-           <li class="dropdown">
-           <a href="Maquinas.html" class="dropbtn">Máquinas</a>
-           <div class="dropdown-content">
-               <a href="Maquinas_rotativas.html">Máquina rotativa</a>
-               <a href="Maquinas_bobina.html">Máquina de bobina</a>
-             </div>
-           </li> 
-           <li class="dropdown">
-           <a href="*" class="dropbtn">tintas</a>
-           <div class="dropdown-content">
-               <a href="#">Permanentes</a>
-               <a href="#">Temporarias</a>
-             </div>
-           </li>
-           <li><a href="Materiais.html">Materiais</a></li>
-           <li><a href="Exemplos.html">Exemplos</a></li>
-           <li class="dropdown">
-           <a href="piercings.html" class="dropbtn">Piercings</a>
-              
-           <div class="dropdown-content">
-               <a href="piercings_orelha.html">Orelha</a>
-               <a href="piercings_nariz.html">Nariz</a>
-               <a href="Piercings_labio.html">Lábio</a>
-             </div>
-           </li>
-       </ul>
-   </nav>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Index</a>
+        <div class="dropdown">
+          <button class="dropbtn"><a href="Maquinas.html">Máquinas</a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Maquinas_rotativas.html">Máquina rotativa</a>
+            <a href="Maquinas_bobina.html">Máquina de bobina</a>
+          </div>
+        </div> 
+        <a href="#">Tintas</a>
+        <a href="Materiais.html">Materiais</a>
+        <div class="dropdown">
+          <button class="dropbtn"><a href="piercings.html">Piercings</a> 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Piercings_labio.html">Piercings labio</a>
+            <a href="piercings_orelha.html">piercings orelha</a>
+            <a href="piercings_nariz.html">piercings nariz</a>
+          </div>
+        </div> 
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
 
    <div class="card">
     <img src="maquina de bobina/maquina_1.jpg" alt="máquina-1" style="width: 100%">
@@ -117,3 +112,14 @@
 
 </body>
 </html>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
