@@ -11,6 +11,7 @@ header {
 .topnav {
   overflow: hidden;
   background-color: black;
+  
 }
 
 .topnav a {
@@ -110,27 +111,27 @@ header {
   }
 }
 
-      /*parte principal*/
+      /*cartões de produtos*/
 
+  .cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
     .card {
-        /*padding: 15px;*/
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
-        max-width: 26%;
+        max-width: 22%;
         border-radius: 15px;
         display: inline-block;
         background-color: rgb(255, 255, 255);
-        margin: auto;
         text-align: center;
         font-family: arial;
         margin-top: 50px;
-        margin-left: 50px;
         padding-left: 20px;
         padding-right: 20px;
         margin-bottom: 100px;
     }
-
-
 
     .card:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -139,3 +140,26 @@ header {
     .Descricao {
         padding: 2px 16px;
     }
+
+
+    .card .carrinho {
+      background-color: black; 
+  border: none;
+  color: white;
+  padding: 12px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 25px;
+    }
+
+    /*footer*/
+
+footer {
+  width: 100%;
+  padding: 50px;
+  background-color: gray;
+  text-align: center;
+  
+}
