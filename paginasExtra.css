@@ -1,3 +1,5 @@
+
+
 * {padding: 0px; margin: 0px;}
 /*header*/
 header {
@@ -11,16 +13,18 @@ header {
 .topnav {
   overflow: hidden;
   background-color: black;
+  
 }
 
 .topnav a {
+  font-family: "Merriweather", serif;
   float: left;
   display: block;
   color: gold;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .active {
@@ -110,32 +114,79 @@ header {
   }
 }
 
-      /*parte principal*/
+      /*cartões de produtos*/
 
+  .cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
     .card {
-        /*padding: 15px;*/
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
-        max-width: 26%;
+        max-width: 27%;
         border-radius: 15px;
         display: inline-block;
         background-color: rgb(255, 255, 255);
-        margin: auto;
         text-align: center;
-        font-family: arial;
+        font-family: 'Fjord One', serif;
         margin-top: 50px;
-        margin-left: 50px;
         padding-left: 20px;
         padding-right: 20px;
         margin-bottom: 100px;
     }
 
-
-
     .card:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
 
+    
+
     .Descricao {
         padding: 2px 16px;
     }
+
+
+    .card .carrinho {
+      background-color: black; 
+  border: none;
+  color: white;
+  padding: 12px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 200;
+  border-radius: 25px;
+  margin-top: 20px;
+    }
+
+.carrinho:hover {
+      cursor: pointer;
+    }
+
+    /*footer*/
+
+footer {
+  width: 100%;
+  padding: 50px;
+  background-color: gray;
+  text-align: center;
+  box-sizing: border-box;
+  
+  
+}
+
+@media screen and (max-width: 900px){
+  .card {
+    max-width: 33%;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+  .card {
+    max-width: 45%;
+  }
+
+}
